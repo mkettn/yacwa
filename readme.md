@@ -33,31 +33,31 @@ Deswegen schlage ich folgende Serverinfrastruktur für gegen Corona vor:
 Es gibt hier drei Akteure:
 
 * das Gesundheitsamt
- * hat ssh-zugriff auf die RPi vom Restaurantbesitzer, beim anmelden via key
-   wird das sick_update.py skript anstatt eine shell ausgeführt, und die
-   verbindung dann beendet.
- * Die Computer AG kann dann ne GUI schreiben, die alle RPis der
-   Restaurantbesitzer anfunkt.
- * bekommt von infizierten Bürgern eine liste mit besuchten Restaurants
+    * hat ssh-zugriff auf die RPi vom Restaurantbesitzer, beim anmelden via key
+      wird das sick_update.py skript anstatt eine shell ausgeführt, und die
+      verbindung dann beendet.
+    * Die Computer AG kann dann ne GUI schreiben, die alle RPis der
+      Restaurantbesitzer anfunkt.
+    * bekommt von infizierten Bürgern eine liste mit besuchten Restaurants
 * der Restaurantbesitzer...
- * stellt sich eine RPi mit den Skripten in `restaurant_server` ins Haus und der
-   Enkel^W Telekom-Servicetechniker^W^W irgendeiner richtet eine
-   Portweiterleitung für ssh/http auf die RPi ein. 
- * HTTP um auf die corona.txt datei zuzugreifen, zu welchen zeitpunkten jemand
-   infiziertes da war.
- * SSH damit der Beamte vom Gesundheitsamt Zeitpunkte zu denen Infizierte im
-   laden waren in der corona.txt appenden kann.
- * druckt nen zettel mit nem qrcode aus und verteilt den mit der Speisekarte.
-   Auf diesem QRcode befindet sich die URL von der RPi und eine E-Mail vom
-   zuständigen Gesundheitsamt.
+    * stellt sich eine RPi mit den Skripten in `restaurant_server` ins Haus und der
+      Enkel^W Telekom-Servicetechniker^W^W irgendeiner richtet eine
+      Portweiterleitung für ssh/http auf die RPi ein. 
+    * HTTP um auf die corona.txt datei zuzugreifen, zu welchen zeitpunkten jemand
+      infiziertes da war.
+    * SSH damit der Beamte vom Gesundheitsamt Zeitpunkte zu denen Infizierte im
+      laden waren in der corona.txt appenden kann.
+    * druckt nen zettel mit nem qrcode aus und verteilt den mit der Speisekarte.
+      Auf diesem QRcode befindet sich die URL von der RPi und eine E-Mail vom
+      zuständigen Gesundheitsamt.
 * der Besucher vom Restaurant (also alle anderen)
- * installiert eine App, die lokal auf dem Handy daten speichern und auf die
-   kamera zugreifen will
- * scannt den QRcode vom Restaurantbesitzer, sodass das handy für
-   $ansteckungszeit lange, speichert, dass man zum Zeitpunkt im Restaurant war.
- * meldet sich beim arzt/gesundheitsamt/woauchimmer, wenn er zum selben
-   zeitpunkt im selben restaurant war wie ein corona infizierter.
- * Wenn er sich ansteckt sendet er seine Liste von Restaurantbesuchen an das
-   Gesundheitsamt da wo er wohnt.
+    * installiert eine App, die lokal auf dem Handy daten speichern und auf die
+      kamera zugreifen will
+    * scannt den QRcode vom Restaurantbesitzer, sodass das handy für
+      $ansteckungszeit lange, speichert, dass man zum Zeitpunkt im Restaurant war.
+    * meldet sich beim arzt/gesundheitsamt/woauchimmer, wenn er zum selben
+      zeitpunkt im selben restaurant war wie ein corona infizierter.
+    * Wenn er sich ansteckt sendet er seine Liste von Restaurantbesuchen an das
+      Gesundheitsamt da wo er wohnt.
 * Bill Gates
- * ka, wie ich den hier unterbringe.
+    * ka, wie ich den hier unterbringe.
