@@ -8,7 +8,7 @@ cp ./sick_updater.py $DIR
 cp ./corona_fileupdater.py $DIR
 
 cat >> /etc/ssh/sshd_config <<EOF
-Match User gesundheitsamt
+Match User yacwa
        X11Forwarding no
        AllowTcpForwarding no
        PermitTTY no
