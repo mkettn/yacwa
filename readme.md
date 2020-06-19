@@ -1,14 +1,14 @@
 # !! offene Arbeiten !! #
 
 * Handy App. Nötige Kenntnisse: 
- * plaintext aus einem QR-Code extrahieren,
- * plaintext in einer sqlite(?) db mit timestamp speichern, alte einträge aus
-   der db löschen.
- * zyklisch mal eine liste an textdateien aus dem Internet herunterladen.
+    * plaintext aus einem QR-Code extrahieren,
+    * plaintext in einer sqlite(?) db mit timestamp speichern, alte einträge aus
+      der db löschen.
+    * zyklisch mal eine liste an textdateien aus dem Internet herunterladen.
 * Beamten-gerechte GUI
- * abwärtskompatibel zu Windows XP
- * textdateien verarbeiten
- * ssh verbindung aufbauen, automatisiert Text reinpasten und wieder schließen
+    * abwärtskompatibel zu Windows XP
+    * textdateien verarbeiten
+    * ssh verbindung aufbauen, automatisiert Text reinpasten und wieder schließen
 
 Server infrastruktur und cmd line client ist soweit fertig.
 
