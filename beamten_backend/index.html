@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>YACWA Admin panel</title>
+    </head>
+    <body>
+        <h1>Neues Restaurant hinzufügen</h1>
+        <form method="post" enctype="multipart/form-data" action="add_restaurant.py">
+            srv:port = <input name="srv" type="text" value=""/><br/>
+            private key = <input name="privkey" type="file" accept="text/*"/>
+            <button>absenden</button>
+        </form>
+        <h1>Beuschsliste parsen</h1>
+        <form method="post" action="parse_visitlist.py">
+            besuchsliste: <input name="visit_list" type="file" accept="text/*"/>
+            <button>absenden</button>
+        </form>
+    </body>
+</html>
